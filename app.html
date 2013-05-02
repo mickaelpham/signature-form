@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Générateur de signature</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/app.css" rel="stylesheet" media="screen">
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+	<div class="container web-main">
+		<div class="row">
+			<div class="span6">
+				<form id="target">
+					<p>
+						<label class="radio inline">
+							<input type="radio" name="title" value="M">
+							Monsieur
+						</label>
+						<label class="radio inline">
+							<input type="radio" name="title" value="Mme">
+							Madame
+						</label>
+					</p>
+
+					<p>
+						<label for="firstname">Prénom :</label>
+						<input type="text" id="firstname" name="firstname" class="span5" placeholder="Votre prénom">
+					</p>
+
+					<p>
+						<label for="lastname">Nom :</label>
+						<input type="text" id="lastname" name="lastname" class="span5" placeholder="Votre nom">
+					</p>
+
+					<p>
+						<label for="position">Position :</label>
+						<select id="position" name="position">
+							<option value="Ingénieur">Ingénieur</option>
+							<option value="Consultant">Consultant</option>
+							<option value="Comptable">Comptable</option>
+						</select>
+					</p>
+
+					<p>
+						<label for="tel-office">Téléphone (office) :</label>
+						<input type="text" id="tel-office" name="tel-office" class="span5" placeholder="Votre téléphone professionel">
+					</p>
+
+					<p>
+						<label for="mobile">Téléphone (mobile) :</label>
+						<input type="text" id="mobile" name="mobile" class="span5" placeholder="Votre mobile">
+					</p>
+
+					<p>
+						<input type="submit" class="btn btn-primary" value="Générer">
+						<a href="app.html" class="btn">Effacer</a>
+					</p>
+				</form>
+			</div>
+
+			<div class="span6">
+				<h5>Résultat (source HTML) :</h5>
+				<textarea id="result-html" rows="10" class="span6"></textarea>
+				<h5>Résultat (visuel) :</h5>
+				<p id="result-wysiwyg"></p>
+			</div>
+		</div>
+	</div>
+	<!-- Bootstrap JS dependencies -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/generator.js"></script>
+</body>
+</html>
