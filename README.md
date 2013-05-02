@@ -1,7 +1,7 @@
 Signature Generator
 ===================
 
-This is a sample application using HTML/CSS/JS to display a form and generate an output (typically, a signature for emails) in the right panel.
+This is a sample application using HTML/CSS/JS to display a form and generate an output (typically, a signature for emails) in the right output panel. It's a simple way for you users to generate an unified but still customizable signature.
 
 
 Built with
@@ -13,3 +13,5 @@ Built with
 
 Preview
 -------
+
+![preview](https://raw.github.com/mickaelpham/signature-form/master/preview.png)
